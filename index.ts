@@ -1,11 +1,9 @@
 import app from "./src/config/express";
 import logger from "./src/config/logger";
 import db from "./src/config/database";
-import appRouter from "./src/routes";
+import envs from "./src/config/envs";
 
-const PORT = process.env.PORT ?? 3003;
-
-app.use("/api", appRouter);
+const PORT = envs.PORT ?? 3003;
 
 db.connect()
   .then(() => {

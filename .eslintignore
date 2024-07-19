@@ -2,3 +2,4 @@ node_modules
 bin
 webpack.config.js
 dist
+I*.ts
