@@ -14,3 +14,4 @@ const pgp = pg(options);
 const db = pgp(envs.DATABASE_URL as string);
 
 export default db;
+export type DatabaseType = typeof db;
