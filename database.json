@@ -12,7 +12,7 @@
     "ENV": "DATABASE_URL"
   },
   "defaultEnv": {
-    "ENV": "DATABASE_URL"
+    "ENV": "NODE_ENV"
   },
   "sql-file": true
 }
